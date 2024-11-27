@@ -1,0 +1,430 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8487E57B2CEB4AA600A0E619 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8487E57A2CEB4AA600A0E619 /* AppDelegate.m */; };
+		8487E57E2CEB4AA600A0E619 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8487E57D2CEB4AA600A0E619 /* SceneDelegate.m */; };
+		8487E5812CEB4AA600A0E619 /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8487E5802CEB4AA600A0E619 /* ViewController.mm */; };
+		8487E5842CEB4AA600A0E619 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8487E5822CEB4AA600A0E619 /* Main.storyboard */; };
+		8487E5862CEB4AA700A0E619 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8487E5852CEB4AA700A0E619 /* Assets.xcassets */; };
+		8487E5892CEB4AA700A0E619 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8487E5872CEB4AA700A0E619 /* LaunchScreen.storyboard */; };
+		8487E58C2CEB4AA700A0E619 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8487E58B2CEB4AA700A0E619 /* main.m */; };
+		849DC80C2CF712F4008567EC /* MarsFaceKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 849DC80A2CF712ED008567EC /* MarsFaceKit.framework */; };
+		849DC80D2CF712F4008567EC /* MarsFaceKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 849DC80A2CF712ED008567EC /* MarsFaceKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		84DD05822CEB61E1001EB5E3 /* VideoCapturer.m in Sources */ = {isa = PBXBuildFile; fileRef = 84DD05812CEB61E1001EB5E3 /* VideoCapturer.m */; };
+		84DD05D32CEC8C3A001EB5E3 /* FaceDotDisplayView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 84DD05D22CEC8C3A001EB5E3 /* FaceDotDisplayView.mm */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		84DD05B42CEC5AD5001EB5E3 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				849DC80D2CF712F4008567EC /* MarsFaceKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		8487E5762CEB4AA600A0E619 /* MarsFace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MarsFace.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8487E5792CEB4AA600A0E619 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		8487E57A2CEB4AA600A0E619 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8487E57C2CEB4AA600A0E619 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		8487E57D2CEB4AA600A0E619 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		8487E57F2CEB4AA600A0E619 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		8487E5802CEB4AA600A0E619 /* ViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ViewController.mm; sourceTree = "<group>"; };
+		8487E5832CEB4AA600A0E619 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8487E5852CEB4AA700A0E619 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8487E5882CEB4AA700A0E619 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8487E58A2CEB4AA700A0E619 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8487E58B2CEB4AA700A0E619 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		849DC80A2CF712ED008567EC /* MarsFaceKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MarsFaceKit.framework; path = MarsFace/MarsFaceKit.framework; sourceTree = "<group>"; };
+		84DD05802CEB61E1001EB5E3 /* VideoCapturer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoCapturer.h; sourceTree = "<group>"; };
+		84DD05812CEB61E1001EB5E3 /* VideoCapturer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoCapturer.m; sourceTree = "<group>"; };
+		84DD05D12CEC8C3A001EB5E3 /* FaceDotDisplayView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FaceDotDisplayView.h; sourceTree = "<group>"; };
+		84DD05D22CEC8C3A001EB5E3 /* FaceDotDisplayView.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = FaceDotDisplayView.mm; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8487E5732CEB4AA600A0E619 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				849DC80C2CF712F4008567EC /* MarsFaceKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8487E56D2CEB4AA600A0E619 = {
+			isa = PBXGroup;
+			children = (
+				8487E5782CEB4AA600A0E619 /* MarsFace */,
+				8487E5772CEB4AA600A0E619 /* Products */,
+				84DD057E2CEB60B3001EB5E3 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8487E5772CEB4AA600A0E619 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8487E5762CEB4AA600A0E619 /* MarsFace.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8487E5782CEB4AA600A0E619 /* MarsFace */ = {
+			isa = PBXGroup;
+			children = (
+				8487E5792CEB4AA600A0E619 /* AppDelegate.h */,
+				8487E57A2CEB4AA600A0E619 /* AppDelegate.m */,
+				8487E57C2CEB4AA600A0E619 /* SceneDelegate.h */,
+				8487E57D2CEB4AA600A0E619 /* SceneDelegate.m */,
+				8487E57F2CEB4AA600A0E619 /* ViewController.h */,
+				8487E5802CEB4AA600A0E619 /* ViewController.mm */,
+				84DD05D12CEC8C3A001EB5E3 /* FaceDotDisplayView.h */,
+				84DD05D22CEC8C3A001EB5E3 /* FaceDotDisplayView.mm */,
+				84DD05802CEB61E1001EB5E3 /* VideoCapturer.h */,
+				84DD05812CEB61E1001EB5E3 /* VideoCapturer.m */,
+				8487E5822CEB4AA600A0E619 /* Main.storyboard */,
+				8487E5852CEB4AA700A0E619 /* Assets.xcassets */,
+				8487E5872CEB4AA700A0E619 /* LaunchScreen.storyboard */,
+				8487E58A2CEB4AA700A0E619 /* Info.plist */,
+				8487E58B2CEB4AA700A0E619 /* main.m */,
+			);
+			path = MarsFace;
+			sourceTree = "<group>";
+		};
+		84DD057E2CEB60B3001EB5E3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				849DC80A2CF712ED008567EC /* MarsFaceKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8487E5752CEB4AA600A0E619 /* MarsFace */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8487E58F2CEB4AA700A0E619 /* Build configuration list for PBXNativeTarget "MarsFace" */;
+			buildPhases = (
+				8487E5722CEB4AA600A0E619 /* Sources */,
+				8487E5732CEB4AA600A0E619 /* Frameworks */,
+				8487E5742CEB4AA600A0E619 /* Resources */,
+				84DD05B42CEC5AD5001EB5E3 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MarsFace;
+			productName = MarsFace;
+			productReference = 8487E5762CEB4AA600A0E619 /* MarsFace.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8487E56E2CEB4AA600A0E619 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					8487E5752CEB4AA600A0E619 = {
+						CreatedOnToolsVersion = 15.2;
+					};
+				};
+			};
+			buildConfigurationList = 8487E5712CEB4AA600A0E619 /* Build configuration list for PBXProject "MarsFace" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8487E56D2CEB4AA600A0E619;
+			productRefGroup = 8487E5772CEB4AA600A0E619 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8487E5752CEB4AA600A0E619 /* MarsFace */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8487E5742CEB4AA600A0E619 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8487E5892CEB4AA700A0E619 /* LaunchScreen.storyboard in Resources */,
+				8487E5862CEB4AA700A0E619 /* Assets.xcassets in Resources */,
+				8487E5842CEB4AA600A0E619 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8487E5722CEB4AA600A0E619 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84DD05D32CEC8C3A001EB5E3 /* FaceDotDisplayView.mm in Sources */,
+				8487E5812CEB4AA600A0E619 /* ViewController.mm in Sources */,
+				8487E57B2CEB4AA600A0E619 /* AppDelegate.m in Sources */,
+				8487E58C2CEB4AA700A0E619 /* main.m in Sources */,
+				8487E57E2CEB4AA600A0E619 /* SceneDelegate.m in Sources */,
+				84DD05822CEB61E1001EB5E3 /* VideoCapturer.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8487E5822CEB4AA600A0E619 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8487E5832CEB4AA600A0E619 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8487E5872CEB4AA700A0E619 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8487E5882CEB4AA700A0E619 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8487E58D2CEB4AA700A0E619 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		8487E58E2CEB4AA700A0E619 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8487E5902CEB4AA700A0E619 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MarsFace",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MarsFace/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = Camera;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = net.pixpark.MarsFace;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8487E5912CEB4AA700A0E619 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MarsFace",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MarsFace/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = Camera;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = net.pixpark.MarsFace;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8487E5712CEB4AA600A0E619 /* Build configuration list for PBXProject "MarsFace" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8487E58D2CEB4AA700A0E619 /* Debug */,
+				8487E58E2CEB4AA700A0E619 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8487E58F2CEB4AA700A0E619 /* Build configuration list for PBXNativeTarget "MarsFace" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8487E5902CEB4AA700A0E619 /* Debug */,
+				8487E5912CEB4AA700A0E619 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8487E56E2CEB4AA600A0E619 /* Project object */;
+}
